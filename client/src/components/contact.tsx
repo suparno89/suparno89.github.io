@@ -85,6 +85,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                  title="LinkedIn"
                 >
                   <i className="fab fa-linkedin text-white text-xl"></i>
                 </a>
@@ -93,8 +94,18 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors"
+                  title="Google Scholar"
                 >
                   <i className="fas fa-graduation-cap text-white text-xl"></i>
+                </a>
+                <a
+                  href={personalInfo.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-900 transition-colors"
+                  title="GitHub"
+                >
+                  <i className="fab fa-github text-white text-xl"></i>
                 </a>
               </div>
             </div>

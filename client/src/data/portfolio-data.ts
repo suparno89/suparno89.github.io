@@ -353,13 +353,14 @@ export const languages: Language[] = [
 
 export const personalInfo = {
   name: 'Suparno Datta, PhD',
-  title: 'Manager Data Science | AI/ML Expert | AI in Healthcare | PhD in Computer Science',
+  title: 'Manager Data Science | AI/ML Expert | PhD in Computer Science',
   email: 'suparno.datta@gmail.com',
   phone: '(+49) 17632433883',
   location: 'Berlin, Germany',
   address: 'Pasewalker Straße 72, 13127, Berlin, Germany',
   linkedIn: 'https://linkedin.com/in/suparno-datta-70573a2a',
   googleScholar: 'https://scholar.google.de/citations?hl=en&user=v6xGwm8AAAAJ',
+  github: 'https://github.com/suparno89',
   dateOfBirth: '12/12/1989',
   nationality: 'German',
   summary: 'Tech Lead Data Science at Fresenius Medical Care with a PhD in Computer Science and 8+ years of experience applying AI/ML in healthcare, technology, and automotive domains. Starting September 2025, I will join AstraZeneca as Manager Data Science in Hamburg. I have led cross-functional teams to design and deploy predictive models, optimization algorithms, and LLM-based solutions, focusing on improving patient outcomes and enabling data-driven decision making. My background includes developing FDA-ready AI systems and building scalable ML applications at Microsoft. I combine hands-on technical expertise with strong leadership, taking ideas from proof-of-concept to practical, scalable solutions that deliver real-world impact and business ROI.'

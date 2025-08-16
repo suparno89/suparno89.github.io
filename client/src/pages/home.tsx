@@ -14,35 +14,6 @@ export default function Home() {
       <Navigation />
       <Hero />
       
-      {/* Key Achievements Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-graduation-cap text-primary text-2xl"></i>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Tech Lead Data Science</h3>
-              <p className="text-gray-600">Leading AI/ML solutions at Fresenius Medical Care</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-award text-secondary text-2xl"></i>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Microsoft RISE Award</h3>
-              <p className="text-gray-600">2023 Outstanding Team Accomplishment</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-trophy text-accent text-2xl"></i>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Best Paper Award</h3>
-              <p className="text-gray-600">AIME 2020 Conference</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <ExperienceTimeline />
       <Education />
       <Skills />
