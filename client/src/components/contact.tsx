@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import { personalInfo } from "@/data/portfolio-data";
 
 interface ContactForm {
@@ -14,27 +12,6 @@ export default function Contact() {
   const [form, setForm] = useState<ContactForm>({ name: '', email: '', message: '' });
   const { toast } = useToast();
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactForm) => {
-      const response = await apiRequest('POST', '/api/contact', data);
-      return response.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setForm({ name: '', email: '', message: '' });
-    },
-    onError: (error) => {
-      toast({
-        title: "Failed to send message",
-        description: error.message || "Please try again later.",
-        variant: "destructive",
-      });
-    },
-  });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) {
@@ -45,7 +22,21 @@ export default function Contact() {
       });
       return;
     }
-    contactMutation.mutate(form);
+
+    // Create mailto link for static website
+    const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`);
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+    const mailtoLink = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
+    toast({
+      title: "Email client opened!",
+      description: "Your default email application should open with the message pre-filled.",
+    });
+    
+    setForm({ name: '', email: '', message: '' });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -157,10 +148,9 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                disabled={contactMutation.isPending}
-                className="w-full bg-primary text-white py-3 px-6 rounded-lg hover:bg-primary/90 transition-colors font-medium disabled:opacity-50"
+                className="w-full bg-primary text-white py-3 px-6 rounded-lg hover:bg-primary/90 transition-colors font-medium"
               >
-                {contactMutation.isPending ? 'Sending...' : 'Send Message'}
+                Send Message
               </button>
             </form>
           </div>

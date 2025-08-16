@@ -44,7 +44,9 @@ export default function Hero() {
                 Get In Touch
               </button>
               <a 
-                href="#" 
+                href="/attached_assets/Dec_2024_Suparno_1755268384202.pdf" 
+                download="Dr_Suparno_Datta_CV.pdf"
+                target="_blank"
                 className="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors font-medium"
               >
                 Download CV

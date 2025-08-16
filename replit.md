@@ -1,6 +1,6 @@
 # Overview
 
-This is a professional portfolio website for Dr. Suparno Datta, built as a full-stack web application showcasing his experience as a Principal Software Engineer, academic achievements, and research publications. The application features a modern React frontend with a Node.js/Express backend, designed to present professional information and handle contact form submissions.
+This is a professional portfolio website for Dr. Suparno Datta, built as a static-first web application showcasing his experience as a Tech Lead Data Science, academic achievements, and research publications. The application features a modern React frontend with a minimal Node.js/Express backend, designed to present professional information without database dependencies. Contact functionality uses direct mailto links for simplicity and reliability.
 
 # User Preferences
 
@@ -21,21 +21,22 @@ The frontend is built with React 18 using TypeScript and follows a component-bas
 The application follows a single-page application (SPA) pattern with smooth scrolling navigation between sections. Components are organized by feature (hero, experience, education, etc.) with shared UI components in a dedicated directory.
 
 ## Backend Architecture
-The backend uses Express.js with TypeScript in an ESM module setup:
+The backend uses Express.js with TypeScript in a minimal static-first setup:
 
-- **API Structure**: RESTful endpoints under `/api` prefix for contact form handling
-- **Data Storage**: Currently uses in-memory storage (MemStorage class) with an interface-based design that allows easy migration to database storage
-- **Schema Validation**: Drizzle ORM with Zod for type-safe database schemas and validation
+- **Static File Serving**: Serves portfolio assets including CV PDF from attached_assets directory
+- **API Structure**: Minimal health check endpoints under `/api` prefix
+- **Contact Handling**: Uses mailto links for direct email contact instead of server-side processing
 - **Development Setup**: Integrated with Vite for seamless full-stack development experience
 
-The server implements middleware for request logging, JSON parsing, and error handling. The modular storage interface allows switching from memory storage to database storage without changing the API layer.
+The server implements middleware for request logging and static file serving. No database dependencies are required, making deployment simple and reliable.
 
-## Database Design
-The application is configured for PostgreSQL using Drizzle ORM:
+## Static Data Architecture
+The application uses static data without database dependencies:
 
-- **Schema Management**: Centralized schema definitions in `shared/schema.ts` for type sharing between frontend and backend
-- **Contact Storage**: Simple contact table with fields for name, email, message, and timestamps
-- **Type Safety**: Generated TypeScript types from database schema ensure compile-time safety
+- **Portfolio Data**: All content stored in `client/src/data/portfolio-data.ts` for easy maintenance
+- **Contact Forms**: Uses mailto links for direct email contact via user's default email client
+- **Type Safety**: TypeScript interfaces ensure compile-time safety for all data structures
+- **CV Access**: Static PDF file served directly from attached_assets directory
 
 ## Development and Deployment
 The project uses a monorepo structure with shared types and schemas:
