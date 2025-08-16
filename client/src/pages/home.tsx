@@ -22,8 +22,8 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-graduation-cap text-primary text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Manager Data Science</h3>
-              <p className="text-gray-600">Leading AI/ML solutions at AstraZeneca</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Tech Lead Data Science</h3>
+              <p className="text-gray-600">Leading AI/ML solutions at Fresenius Medical Care</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">

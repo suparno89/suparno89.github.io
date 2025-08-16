@@ -62,34 +62,34 @@ export const experiences: Experience[] = [
     id: '1',
     title: 'Manager Data Science',
     company: 'AstraZeneca',
-    location: 'Berlin, Germany',
-    period: 'March 2024 - Present',
-    current: true,
+    location: 'Hamburg, Germany',
+    period: 'September 2025 - Future',
+    current: false,
     description: [
-      'Managing data science team developing AI/ML solutions for pharmaceutical research and development',
-      'Leading cross-functional initiatives to implement predictive models for drug discovery and patient outcomes',
-      'Architecting scalable ML platforms for clinical data analysis and real-world evidence generation',
-      'Driving strategic partnerships between data science and clinical teams to accelerate therapeutic innovation'
+      'Will lead data science initiatives developing AI/ML solutions for pharmaceutical research and drug discovery',
+      'Planning to implement predictive models for clinical trial optimization and patient stratification',
+      'Will architect scalable ML platforms for real-world evidence generation and regulatory submissions',
+      'Expected to drive strategic partnerships between data science and clinical teams to accelerate therapeutic innovation'
     ],
     category: 'current',
-    color: 'bg-primary',
-    icon: 'fas fa-briefcase'
+    color: 'bg-accent',
+    icon: 'fas fa-calendar-alt'
   },
   {
     id: '1a',
     title: 'Tech Lead Data Science',
     company: 'Fresenius Medical Care',
     location: 'Berlin, Germany',
-    period: 'March 2024 - March 2024',
-    current: false,
+    period: 'March 2024 - Present',
+    current: true,
     description: [
-      'Led cross-functional team developing optimization-based hemoglobin management solution',
-      'Architected Azure platform solutions for FDA submission readiness',
-      'Implemented predictive models for patient outcomes and hospital readmission reduction',
-      'Provided mentorship and technical guidance to junior team members'
+      'Leading cross-functional team developing optimization-based hemoglobin management solution',
+      'Architecting Azure platform solutions for FDA submission readiness',
+      'Implementing predictive models for patient outcomes and hospital readmission reduction',
+      'Providing mentorship and technical guidance to junior team members'
     ],
-    category: 'senior',
-    color: 'bg-secondary',
+    category: 'current',
+    color: 'bg-primary',
     icon: 'fas fa-briefcase'
   },
   {
@@ -362,5 +362,5 @@ export const personalInfo = {
   googleScholar: 'https://scholar.google.de/citations?hl=en&user=v6xGwm8AAAAJ',
   dateOfBirth: '12/12/1989',
   nationality: 'German',
-  summary: 'Manager Data Science at AstraZeneca with a PhD in Computer Science and 8+ years of experience applying AI/ML in healthcare, technology, and automotive domains. I have led cross-functional teams to design and deploy predictive models, optimization algorithms, and LLM-based solutions, focusing on improving patient outcomes and enabling data-driven decision making. My background includes developing FDA-ready AI systems at Fresenius Medical Care and building scalable ML applications at Microsoft. I combine hands-on technical expertise with strong leadership, taking ideas from proof-of-concept to practical, scalable solutions that deliver real-world impact and business ROI.'
+  summary: 'Tech Lead Data Science at Fresenius Medical Care with a PhD in Computer Science and 8+ years of experience applying AI/ML in healthcare, technology, and automotive domains. Starting September 2025, I will join AstraZeneca as Manager Data Science in Hamburg. I have led cross-functional teams to design and deploy predictive models, optimization algorithms, and LLM-based solutions, focusing on improving patient outcomes and enabling data-driven decision making. My background includes developing FDA-ready AI systems and building scalable ML applications at Microsoft. I combine hands-on technical expertise with strong leadership, taking ideas from proof-of-concept to practical, scalable solutions that deliver real-world impact and business ROI.'
 };
