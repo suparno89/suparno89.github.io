@@ -91,7 +91,7 @@ export const experiences: Experience[] = [
     icon: 'fas fa-briefcase'
   },
   {
-    id: '2',
+    id: '3',
     title: 'Senior Data and Applied Scientist',
     company: 'Microsoft',
     location: 'Berlin, Germany',
@@ -108,7 +108,7 @@ export const experiences: Experience[] = [
     icon: 'fas fa-code'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Research Assistant, PhD Candidate',
     company: 'Hasso Plattner Institute',
     location: 'Potsdam, Germany',
@@ -125,7 +125,7 @@ export const experiences: Experience[] = [
     icon: 'fas fa-graduation-cap'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Data Scientist',
     company: 'Scout24',
     location: 'Munich, Germany',
@@ -140,7 +140,7 @@ export const experiences: Experience[] = [
     icon: 'fas fa-car'
   },
   {
-    id: '5',
+    id: '6',
     title: 'Data Scientist',
     company: 'ZeroG GmbH (Lufthansa Systems)',
     location: 'Frankfurt, Germany',
@@ -156,7 +156,7 @@ export const experiences: Experience[] = [
     icon: 'fas fa-plane'
   },
   {
-    id: '6',
+    id: '7',
     title: 'Data Scientist',
     company: 'TeamViewer GmbH',
     location: 'Göppingen, Germany',
