@@ -60,19 +60,36 @@ export interface Language {
 export const experiences: Experience[] = [
   {
     id: '1',
-    title: 'Tech Lead Data Science',
-    company: 'Fresenius Medical Care',
+    title: 'Manager Data Science',
+    company: 'AstraZeneca',
     location: 'Berlin, Germany',
     period: 'March 2024 - Present',
     current: true,
     description: [
-      'Leading cross-functional team developing optimization-based hemoglobin management solution',
-      'Architecting Azure platform solutions for FDA submission readiness',
-      'Implementing predictive models for patient outcomes and hospital readmission reduction',
-      'Providing mentorship and technical guidance to junior team members'
+      'Managing data science team developing AI/ML solutions for pharmaceutical research and development',
+      'Leading cross-functional initiatives to implement predictive models for drug discovery and patient outcomes',
+      'Architecting scalable ML platforms for clinical data analysis and real-world evidence generation',
+      'Driving strategic partnerships between data science and clinical teams to accelerate therapeutic innovation'
     ],
     category: 'current',
     color: 'bg-primary',
+    icon: 'fas fa-briefcase'
+  },
+  {
+    id: '1a',
+    title: 'Tech Lead Data Science',
+    company: 'Fresenius Medical Care',
+    location: 'Berlin, Germany',
+    period: 'March 2024 - March 2024',
+    current: false,
+    description: [
+      'Led cross-functional team developing optimization-based hemoglobin management solution',
+      'Architected Azure platform solutions for FDA submission readiness',
+      'Implemented predictive models for patient outcomes and hospital readmission reduction',
+      'Provided mentorship and technical guidance to junior team members'
+    ],
+    category: 'senior',
+    color: 'bg-secondary',
     icon: 'fas fa-briefcase'
   },
   {
@@ -335,8 +352,8 @@ export const languages: Language[] = [
 ];
 
 export const personalInfo = {
-  name: 'Dr. Suparno Datta',
-  title: 'Tech Lead Data Science | AI/ML Expert | PhD in Computer Science',
+  name: 'Suparno Datta, PhD',
+  title: 'Manager Data Science | AI/ML Expert | AI in Healthcare | PhD in Computer Science',
   email: 'suparno.datta@gmail.com',
   phone: '(+49) 17632433883',
   location: 'Berlin, Germany',
@@ -345,5 +362,5 @@ export const personalInfo = {
   googleScholar: 'https://scholar.google.de/citations?hl=en&user=v6xGwm8AAAAJ',
   dateOfBirth: '12/12/1989',
   nationality: 'German',
-  summary: 'Leading innovative AI/ML solutions in healthcare at Fresenius Medical Care. Specialized in LLMs, predictive modeling, and optimization algorithms with 8+ years of experience across Microsoft, healthcare, and automotive industries.'
+  summary: 'Manager Data Science at AstraZeneca with a PhD in Computer Science and 8+ years of experience applying AI/ML in healthcare, technology, and automotive domains. I have led cross-functional teams to design and deploy predictive models, optimization algorithms, and LLM-based solutions, focusing on improving patient outcomes and enabling data-driven decision making. My background includes developing FDA-ready AI systems at Fresenius Medical Care and building scalable ML applications at Microsoft. I combine hands-on technical expertise with strong leadership, taking ideas from proof-of-concept to practical, scalable solutions that deliver real-world impact and business ROI.'
 };

@@ -1,6 +1,6 @@
 # Overview
 
-This is a professional portfolio website for Dr. Suparno Datta, built as a static-first web application showcasing his experience as a Tech Lead Data Science, academic achievements, and research publications. The application features a modern React frontend with a minimal Node.js/Express backend, designed to present professional information without database dependencies. Contact functionality uses direct mailto links for simplicity and reliability.
+This is a professional portfolio website for Suparno Datta, PhD, built as a static-first web application showcasing his experience as a Manager Data Science at AstraZeneca, academic achievements, and research publications. The application features a modern React frontend with a minimal Node.js/Express backend, designed to present professional information without database dependencies. Contact functionality uses direct mailto links for simplicity and reliability.
 
 # User Preferences
 

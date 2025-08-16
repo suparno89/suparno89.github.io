@@ -22,8 +22,8 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-graduation-cap text-primary text-2xl"></i>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">PhD Computer Science</h3>
-              <p className="text-gray-600">Magna Cum Laude from Hasso Plattner Institute</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Manager Data Science</h3>
+              <p className="text-gray-600">Leading AI/ML solutions at AstraZeneca</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -55,7 +55,7 @@ export default function Home() {
       <footer className="bg-black text-gray-400 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <p>&copy; 2024 Dr. Suparno Datta. All rights reserved.</p>
+            <p>&copy; 2024 Suparno Datta, PhD. All rights reserved.</p>
             <p className="mt-2 text-sm">Built with modern web technologies</p>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-xl font-bold text-gray-900">Dr. Suparno Datta</div>
+          <div className="text-xl font-bold text-gray-900">Suparno Datta, PhD</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
