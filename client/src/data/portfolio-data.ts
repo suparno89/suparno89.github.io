@@ -67,20 +67,18 @@ export const experiences: Experience[] = [
     current: false,
     description: [
       'Will lead data science initiatives developing AI/ML solutions for pharmaceutical research and drug discovery',
-      'Planning to implement predictive models for clinical trial optimization and patient stratification',
-      'Will architect scalable ML platforms for real-world evidence generation and regulatory submissions',
-      'Expected to drive strategic partnerships between data science and clinical teams to accelerate therapeutic innovation'
+      'Expected to drive strategic partnerships between data science and other units to accelerate therapeutic innovation'
     ],
     category: 'current',
     color: 'bg-accent',
     icon: 'fas fa-calendar-alt'
   },
   {
-    id: '1a',
+    id: '2',
     title: 'Tech Lead Data Science',
     company: 'Fresenius Medical Care',
     location: 'Berlin, Germany',
-    period: 'March 2024 - Present',
+    period: 'March 2024 - July 2025',
     current: true,
     description: [
       'Leading cross-functional team developing optimization-based hemoglobin management solution',
@@ -88,7 +86,7 @@ export const experiences: Experience[] = [
       'Implementing predictive models for patient outcomes and hospital readmission reduction',
       'Providing mentorship and technical guidance to junior team members'
     ],
-    category: 'current',
+    category: 'senior',
     color: 'bg-primary',
     icon: 'fas fa-briefcase'
   },
@@ -215,7 +213,7 @@ export const publications: Publication[] = [
     authors: 'Datta S, Morassi Sasso A, Kiwit N, Bose S, Nadkarni G, Miotto R, Böttinger EP',
     venue: 'JAMIA Open, 2022',
     year: 2022,
-    category: 'healthcare',
+    category: 'healthcare', 'ml',
     color: 'primary'
   },
   {
@@ -224,7 +222,7 @@ export const publications: Publication[] = [
     authors: 'Hackl M, Datta S, Bottinger E',
     venue: 'AIME 2021',
     year: 2021,
-    category: 'ml',
+    category: 'healthcare', 'ml',
     color: 'secondary'
   },
   {
@@ -233,7 +231,7 @@ export const publications: Publication[] = [
     authors: 'Datta S, Sachs JP, Cruz HF, Martensen T, Bode P, Sasso AM, Glicksberg BS, Böttinger E',
     venue: 'JAMIA Open, 2021',
     year: 2021,
-    category: 'systems',
+    category: 'healthcare', 'systems',
     color: 'accent'
   },
   {
@@ -242,7 +240,7 @@ export const publications: Publication[] = [
     authors: 'Sasso AM, Datta S, Jeitler M, Steckhan N, Kessler CS, Michalsen A, Arnrich B, Boettinger E',
     venue: 'AIME 2020',
     year: 2020,
-    category: 'healthcare',
+    category: 'healthcare', 'ml',
     award: 'Best Paper Award',
     color: 'purple'
   },
@@ -252,7 +250,7 @@ export const publications: Publication[] = [
     authors: 'Datta S, Schraplau A, Da Cruz HF, Sachs JP, Mayer F, Böttinger E',
     venue: 'IEEE BIBE 2019',
     year: 2019,
-    category: 'healthcare',
+    category: 'healthcare', 'ml',
     color: 'primary'
   },
   {
