@@ -40,12 +40,10 @@ export default function Hero() {
               <span className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-medium">
                 AI in Healthcare
               </span>
-              <span className="px-4 py-2 bg-gray-600 text-white rounded-full text-sm font-medium">
-                Joining AstraZeneca Sept 2025
-              </span>
             </div>
 
-            <div className="flex gap-4">
+            {/* Buttons + Social links inline */}
+            <div className="flex items-center gap-4 flex-wrap">
               <button
                 onClick={scrollToContact}
                 className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors font-medium"
@@ -60,12 +58,9 @@ export default function Hero() {
               >
                 Download CV
               </a>
-            </div>
 
-            {/* Professional Links */}
-            <div className="mt-8">
-              <h4 className="text-lg font-semibold mb-4">Professional Links</h4>
-              <div className="flex space-x-4">
+              {/* Social icons inline with buttons */}
+              <div className="flex space-x-4 ml-2">
                 <a
                   href={personalInfo.linkedIn}
                   target="_blank"
@@ -100,7 +95,6 @@ export default function Hero() {
           {/* Right column: photo with fallback */}
           <div className="flex justify-center">
             <div className="w-80 h-80 rounded-2xl shadow-2xl overflow-hidden relative">
-              {/* gradient background frame */}
               <div className="absolute inset-0 gradient-primary" aria-hidden="true" />
               {!imgError ? (
                 <img
