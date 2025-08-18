@@ -213,7 +213,7 @@ export const publications: Publication[] = [
     authors: 'Datta S, Morassi Sasso A, Kiwit N, Bose S, Nadkarni G, Miotto R, Böttinger EP',
     venue: 'JAMIA Open, 2022',
     year: 2022,
-    category: 'healthcare', 'ml',
+    category: ['healthcare', 'ml'],
     color: 'primary'
   },
   {
@@ -222,7 +222,7 @@ export const publications: Publication[] = [
     authors: 'Hackl M, Datta S, Bottinger E',
     venue: 'AIME 2021',
     year: 2021,
-    category: 'healthcare', 'ml',
+    category: ['healthcare', 'ml'],
     color: 'secondary'
   },
   {
@@ -231,7 +231,7 @@ export const publications: Publication[] = [
     authors: 'Datta S, Sachs JP, Cruz HF, Martensen T, Bode P, Sasso AM, Glicksberg BS, Böttinger E',
     venue: 'JAMIA Open, 2021',
     year: 2021,
-    category: 'healthcare', 'systems',
+    category: ['healthcare', 'systems'],
     color: 'accent'
   },
   {
@@ -240,7 +240,7 @@ export const publications: Publication[] = [
     authors: 'Sasso AM, Datta S, Jeitler M, Steckhan N, Kessler CS, Michalsen A, Arnrich B, Boettinger E',
     venue: 'AIME 2020',
     year: 2020,
-    category: 'healthcare', 'ml',
+    category: ['healthcare', 'ml'],
     award: 'Best Paper Award',
     color: 'purple'
   },
@@ -250,7 +250,7 @@ export const publications: Publication[] = [
     authors: 'Datta S, Schraplau A, Da Cruz HF, Sachs JP, Mayer F, Böttinger E',
     venue: 'IEEE BIBE 2019',
     year: 2019,
-    category: 'healthcare', 'ml',
+    category: ['healthcare', 'ml'],
     color: 'primary'
   },
   {
