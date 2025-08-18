@@ -19,26 +19,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Install & build (client)
+      - name: Install deps (client)
         working-directory: client
         run: |
-          # If you DON'T have package-lock.json, use 'npm install' instead of 'npm ci'
-          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Build (client)
+        working-directory: client
+        run: |
           npm run build
-          cp dist/index.html dist/404.html
-          touch dist/.nojekyll
+          # Add SPA refresh fallback and disable Jekyll
+          cp dist/public/index.html dist/public/404.html
+          touch dist/public/.nojekyll
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: client/dist
+          path: client/dist/public
 
   deploy:
     environment:
