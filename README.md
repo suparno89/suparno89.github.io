@@ -5,12 +5,6 @@ Professional portfolio website showcasing my expertise as a Manager Data Science
 ## Live Website
 Visit: [https://suparno89.github.io/](https://suparno89.github.io/)
 
-## About
-- **Current Role**: Tech Lead Data Science at Fresenius Medical Care (March 2024 - Present)
-- **Upcoming Role**: Manager Data Science at AstraZeneca, Hamburg (September 2025)
-- **Education**: PhD in Computer Science
-- **Expertise**: Machine Learning, Large Language Models, Time Series, AI in Healthcare
-
 ## Features
 - ✅ Responsive design optimized for all devices
 - ✅ Professional experience timeline
