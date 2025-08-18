@@ -32,7 +32,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          # SPA fallback + avoid Jekyll interference
+          # SPA refresh fix + avoid Jekyll interference
           cp dist/index.html dist/404.html
           touch dist/.nojekyll
 
