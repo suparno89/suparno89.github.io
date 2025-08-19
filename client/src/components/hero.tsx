@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { personalInfo } from "@/data/portfolio-data";
+import profileImg from "@/attached_assets/profile.jpeg";
+
 
 export default function Hero() {
   const [imgError, setImgError] = useState(false);
@@ -98,7 +100,7 @@ export default function Hero() {
               <div className="absolute inset-0 gradient-primary" aria-hidden="true" />
               {!imgError ? (
                 <img
-                  src="/attached_assets/profile.jpeg" // place your image at client/public/profile.jpg
+                  src={profileImg} // place your image at client/public/profile.jpg
                   alt={`${personalInfo.name} portrait`}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="eager"
