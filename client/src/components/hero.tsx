@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { personalInfo } from "@/data/portfolio-data";
-import profileImg from "@/attached_assets/profile.jpeg";
-
+import profileImg from "@/attached_assets/profile.jpg";
+import cvFile from "@/attached_assets/Dec_2024_Suparno_1755268384202.pdf"
 
 export default function Hero() {
   const [imgError, setImgError] = useState(false);
@@ -53,7 +53,7 @@ export default function Hero() {
                 Get In Touch
               </button>
               <a
-                href="/attached_assets/Dec_2024_Suparno_1755268384202.pdf"
+                href={cvFile}
                 download="Suparno_Datta_PhD_CV.pdf"
                 target="_blank"
                 className="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors font-medium"
