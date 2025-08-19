@@ -29,9 +29,10 @@ export interface Publication {
   authors: string;
   venue: string;
   year: number;
-  category: 'healthcare' | 'ml' | 'systems';
+  category: 'healthcare' | 'systems';
   award?: string;
   color: string;
+  link: string;
 }
 
 export interface Award {
@@ -64,14 +65,14 @@ export const experiences: Experience[] = [
     company: 'AstraZeneca',
     location: 'Hamburg, Germany',
     period: 'September 2025 - Future',
-    current: false,
+    current: true,
     description: [
       'Will lead data science initiatives developing AI/ML solutions for pharmaceutical research and drug discovery',
-      'Expected to drive strategic partnerships between data science and other units to accelerate therapeutic innovation'
+      'Expected to drive strategic partnerships between data science and other units to drive sales and accelerate therapeutic innovation'
     ],
     category: 'current',
     color: 'bg-accent',
-    icon: 'fas fa-calendar-alt'
+    icon: 'fas fa-notes-medical'
   },
   {
     id: '2',
@@ -79,7 +80,7 @@ export const experiences: Experience[] = [
     company: 'Fresenius Medical Care',
     location: 'Berlin, Germany',
     period: 'March 2024 - July 2025',
-    current: true,
+    current: false,
     description: [
       'Leading cross-functional team developing optimization-based hemoglobin management solution',
       'Architecting Azure platform solutions for FDA submission readiness',
@@ -88,7 +89,7 @@ export const experiences: Experience[] = [
     ],
     category: 'senior',
     color: 'bg-primary',
-    icon: 'fas fa-briefcase'
+    icon: 'fas fa-notes-medical'
   },
   {
     id: '3',
@@ -213,8 +214,9 @@ export const publications: Publication[] = [
     authors: 'Datta S, Morassi Sasso A, Kiwit N, Bose S, Nadkarni G, Miotto R, Böttinger EP',
     venue: 'JAMIA Open, 2022',
     year: 2022,
-    category: ['healthcare', 'ml'],
-    color: 'primary'
+    category: 'healthcare',
+    color: 'primary',
+    link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9696747/'
   },
   {
     id: '2',
@@ -222,8 +224,9 @@ export const publications: Publication[] = [
     authors: 'Hackl M, Datta S, Bottinger E',
     venue: 'AIME 2021',
     year: 2021,
-    category: ['healthcare', 'ml'],
-    color: 'secondary'
+    category: 'healthcare',
+    color: 'secondary',
+    link: 'https://dl.acm.org/doi/10.1007/978-3-030-77211-6_24'
   },
   {
     id: '3',
@@ -231,8 +234,9 @@ export const publications: Publication[] = [
     authors: 'Datta S, Sachs JP, Cruz HF, Martensen T, Bode P, Sasso AM, Glicksberg BS, Böttinger E',
     venue: 'JAMIA Open, 2021',
     year: 2021,
-    category: ['healthcare', 'systems'],
-    color: 'accent'
+    category: 'healthcare',
+    color: 'accent',
+    link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8327378/'
   },
   {
     id: '4',
@@ -240,9 +244,10 @@ export const publications: Publication[] = [
     authors: 'Sasso AM, Datta S, Jeitler M, Steckhan N, Kessler CS, Michalsen A, Arnrich B, Boettinger E',
     venue: 'AIME 2020',
     year: 2020,
-    category: ['healthcare', 'ml'],
+    category: 'healthcare',
     award: 'Best Paper Award',
-    color: 'purple'
+    color: 'purple',
+    link: 'https://link.springer.com/chapter/10.1007/978-3-030-59137-3_29'
   },
   {
     id: '5',
@@ -250,8 +255,9 @@ export const publications: Publication[] = [
     authors: 'Datta S, Schraplau A, Da Cruz HF, Sachs JP, Mayer F, Böttinger E',
     venue: 'IEEE BIBE 2019',
     year: 2019,
-    category: ['healthcare', 'ml'],
-    color: 'primary'
+    category: 'healthcare',
+    color: 'primary',
+    link: 'https://ieeexplore.ieee.org/document/8941729'
   },
   {
     id: '6',
@@ -260,7 +266,8 @@ export const publications: Publication[] = [
     venue: 'ICDCIT 2013',
     year: 2013,
     category: 'systems',
-    color: 'accent'
+    color: 'accent',
+    link: 'https://link.springer.com/chapter/10.1007/978-3-642-36071-8_15'
   }
 ];
 
